@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="dashboard__sidebar">
+            <div class="sidebar__header">
+                <h1 class="sidebar__logo"><img src="icons/setting.svg" alt="settings" />
+                    Dashboard </h1><sub>v.01</sub>
+            </div>
+            <nav class="sidebar__menu">
+                <a href="#" class="sidebar__link"><img src="icons/dashboard.svg"
+                        alt="Dashboard icon" /><span>Dashboard</span></a>
+                <a href="#" class="sidebar__link"><img src="icons/product.svg" alt="Product icon" /><span>Product</span>
+                    <img src="icons/chevron-right.svg" alt="chevron-right icon" /></a>
+                <a href="#" class="sidebar__link sidebar__link--active"><img src="icons/Customers.svg"
+                        alt="Customers icon" /><span>Customers </span><img src="icons/chevron-right.svg"
+                        alt="chevron-right icon" /></a>
+                <a href="#" class="sidebar__link"><img src="icons/income.svg" alt="Income icon" /><span>Income
+                    </span><img src="icons/chevron-right.svg" alt="chevron-right icon" /></a>
+                <a href="#" class="sidebar__link"><img src="icons/promote.svg" alt="Promote icon" /><span>Promote</span>
+                    <img src="icons/chevron-right.svg" alt="chevron-right icon" /></a>
+                <a href="#" class="sidebar__link"><img src="icons/help.svg" alt="Help icon" /><span>Help</span> <img
+                        src="icons/chevron-right.svg" alt="chevron-right icon" /></a>
+            </nav>
+            <div class="sidebar__footer">
+                <img src="icons/photo.svg" alt="User Avatar" class="sidebar__avatar">
+                <p class="sidebar__user">Evano <span>Project Manager</span></p>
+            </div>
+        </aside>
+
+        <main class="dashboard__content">
+            <header class="content__header">
+                <h2 class="content__title">Hello Evano👋,</h2>
+            </header>
+            <section class="content__main">
+                <div class="customers">
+                    <div class="customers__header">
+                        <div class="customers__name">
+                            <h3 class="customers__title">All Customers</h3>
+                            <p class="customers__subtitle">Active Members</p>
+                        </div>
+
+                        <div class="customers__search">
+                            <input type="text" class="search__input" placeholder="Search">
+                        </div>
+                    </div>
+                        <div class="customers__table">
+                            <div class="table__header-row">
+                                <div class="table__header">Customer Name</div>
+                                <div class="table__header single">Company</div>
+                                <div class="table__header double md-column">Company/ <br> Country</div>
+                                <div class="table__header single">Phone Number</div>
+                                <div class="table__header single">Email</div>
+                                <div class="table__header double">Phone Number/ <br> Email</div>
+                                <div class="table__header single">Country</div>
+                                <div class="table__header"><div>Status</div></div>
+                            </div>
+                        
+                            <div class="table__row table1">
+                                <div class="table__cell">Jane Cooper<div class="sm-span">(Microsoft United States)</div></div>
+                                <div class="table__cell single">Microsoft</div>
+                                <div class="table__cell double md-column">Microsoft <br> United States</div>
+                                <div class="table__cell single">(225) 555-0118</div>
+                                <div class="table__cell single">jane@microsoft.com</div>
+                                <div class="table__cell double">(225) 555-0118 <br> jane@microsoft.com</div>
+                                <div class="table__cell single">United States</div>
+                                <div class="table__cell"><div class="status status--active"></div></div>
+                            </div>
+                        
+                            <div class="table__row">
+                                <div class="table__cell">Floyd Miles<div class="sm-span">(Yahoo Kiribati)</div></div>
+                                <div class="table__cell single">Yahoo</div>
+                                <div class="table__cell double md-column">Yahoo <br> Kiribati</div>
+                                <div class="table__cell single">(205) 555-0100</div>
+                                <div class="table__cell single">floyd@yahoo.com</div>
+                                <div class="table__cell double">(205) 555-0100 <br> floyd@yahoo.com</div>
+                                <div class="table__cell single">Kiribati</div>
+                                <div class="table__cell"><span class="status status--in-active"></span></div>
+                            </div>
+                        
+                            <div class="table__row">
+                                <div class="table__cell">Ronald Richards<div class="sm-span">(Adobe Israel)</div></div>
+                                <div class="table__cell single">Adobe</div>
+                                <div class="table__cell double md-column">Adobe <br> Israel</div>
+                                <div class="table__cell single">(302) 555-0107</div>
+                                <div class="table__cell single">ronald@adobe.com</div>
+                                <div class="table__cell double">(302) 555-0107 <br> ronald@adobe.com</div>
+                                <div class="table__cell single">Israel</div>
+                                <div class="table__cell"><span class="status status--in-active"></span></div>
+                            </div>
+                        
+                            <div class="table__row">
+                                <div class="table__cell">Marvin McKinney<div class="sm-span">(Tesla Iran)</div></div>
+                                <div class="table__cell single">Tesla</div>
+                                <div class="table__cell double md-column">Tesla <br> Iran</div>
+                                <div class="table__cell single">(252) 555-0126</div>
+                                <div class="table__cell single">marvin@tesla.com</div>
+                                <div class="table__cell double">(252) 555-0126 <br> marvin@tesla.com</div>
+                                <div class="table__cell single">Iran</div>
+                                <div class="table__cell"><span class="status status--active"></span></div>
+                            </div>
+                        
+                            <div class="table__row">
+                                <div class="table__cell">Jerome Bell<div class="sm-span">(Google Réunion)</div></div>
+                                <div class="table__cell single">Google</div>
+                                <div class="table__cell double md-column">Google <br> Réunion</div>
+                                <div class="table__cell single">(629) 555-0129</div>
+                                <div class="table__cell single">jerome@google.com</div>
+                                <div class="table__cell double">(629) 555-0129 <br> jerome@google.com</div>
+                                <div class="table__cell single">Réunion</div>
+                                <div class="table__cell"><span class="status status--active"></span></div>
+                            </div>
+                        
+                            <div class="table__row">
+                                <div class="table__cell">Kathryn Murphy<div class="sm-span">(Microsoft Curaçao)</div></div>
+                                <div class="table__cell single">Microsoft</div>
+                                <div class="table__cell double md-column">Microsoft <br> Curaçao</div>
+                                <div class="table__cell single">(406) 555-0120</div>
+                                <div class="table__cell single">kathryn@microsoft.com</div>
+                                <div class="table__cell double">(406) 555-0120 <br> kathryn@microsoft.com</div>
+                                <div class="table__cell single">Curaçao</div>
+                                <div class="table__cell"><span class="status status--active"></span></div>
+                            </div>
+                        
+                            <div class="table__row">
+                                <div class="table__cell">Jacob Jones<div class="sm-span">(Yahoo Brazil)</div></div>
+                                <div class="table__cell single">Yahoo</div>
+                                <div class="table__cell double md-column">Yahoo <br> Brazil</div>
+                                <div class="table__cell single">(208) 555-0112</div>
+                                <div class="table__cell single">jacob@yahoo.com</div>
+                                <div class="table__cell double">(208) 555-0112 <br> jacob@yahoo.com</div>
+                                <div class="table__cell single">Brazil</div>
+                                <div class="table__cell"><span class="status status--active"></span></div>
+                            </div>
+                        
+                            <div class="table__row">
+                                <div class="table__cell">Kristin Watson<div class="sm-span">(Facebook Åland Islands)</div></div>
+                                <div class="table__cell single">Facebook</div>
+                                <div class="table__cell double md-column">Facebook <br> Åland Islands</div>
+                                <div class="table__cell single">(704) 555-0127</div>
+                                <div class="table__cell single">kristin@facebook.com</div>
+                                <div class="table__cell double">(704) 555-0127 <br> kristin@facebook.com</div>
+                                <div class="table__cell single">Åland Islands</div>
+                                <div class="table__cell"><span class="status status--in-active"></span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="table__footer">
+                            <div class="table__entries-info">Showing data 1 to 8 of 256K entries</div>
+                            <div class="table__pagination">
+                                <span class="page-number">&lt;</span>
+                                <span class="page-number active">1</span>
+                                <span class="page-number">2</span>
+                                <span class="page-number">3</span>
+                                <span class="page-number">4</span>
+                                <span class="page-number points">...</span>
+                                <span class="page-number">40</span>
+                                <span class="page-number">&gt;</span>
+                            </div>
+                        </div>  
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
